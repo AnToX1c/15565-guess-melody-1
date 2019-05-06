@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const WelcomeScr = ({time, errorCount}) => (
   <section className="welcome">
@@ -22,6 +23,11 @@ const WelcomeScr = ({time, errorCount}) => (
     <p className="welcome__text">Удачи!</p>
   </section>
 );
+
+WelcomeScr.propTypes = {
+  time: PropTypes.number.isRequired,
+  errorCount: PropTypes.number.isRequired
+};
 
 const WelcomeScreen = React.memo(WelcomeScr);
 
