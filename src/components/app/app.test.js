@@ -3,12 +3,7 @@ import renderer from "react-test-renderer";
 import App from "./app.jsx";
 
 it(`App correctly renders`, () => {
-  const tree = renderer
-    .create(<App
-      gameTime={0}
-      errorCount={0}
-    />)
-    .toJSON();
+  const tree = renderer.create(<App gameTime={0} errorCount={0} />).toJSON();
 
   expect(tree).toMatchSnapshot();
 });
