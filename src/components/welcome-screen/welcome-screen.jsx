@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const WelcomeScr = ({time, errorCount}) => (
+const WelcomeScr = ({time, errorCount, onClick}) => (
   <section className="welcome">
     <div className="welcome__logo">
       <img
@@ -11,7 +11,7 @@ const WelcomeScr = ({time, errorCount}) => (
         height="83"
       />
     </div>
-    <button className="welcome__button">
+    <button className="welcome__button" onClick={onClick}>
       <span className="visually-hidden">Начать игру</span>
     </button>
     <h2 className="welcome__rules-title">Правила игры</h2>
@@ -26,7 +26,8 @@ const WelcomeScr = ({time, errorCount}) => (
 
 WelcomeScr.propTypes = {
   time: PropTypes.number.isRequired,
-  errorCount: PropTypes.number.isRequired
+  errorCount: PropTypes.number.isRequired,
+  onClick: PropTypes.func,
 };
 
 const WelcomeScreen = React.memo(WelcomeScr);
