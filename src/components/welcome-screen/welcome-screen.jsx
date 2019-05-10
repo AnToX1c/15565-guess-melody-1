@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const WelcomeScr = ({time, errorCount, onClick}) => (
+const WelcomeScreen = ({time, errorCount, onClick}) => (
   <section className="welcome">
     <div className="welcome__logo">
       <img
@@ -24,12 +24,10 @@ const WelcomeScr = ({time, errorCount, onClick}) => (
   </section>
 );
 
-WelcomeScr.propTypes = {
+WelcomeScreen.propTypes = {
   time: PropTypes.number.isRequired,
   errorCount: PropTypes.number.isRequired,
   onClick: PropTypes.func,
 };
 
-const WelcomeScreen = React.memo(WelcomeScr);
-
-export default WelcomeScreen;
+export default React.memo(WelcomeScreen);
