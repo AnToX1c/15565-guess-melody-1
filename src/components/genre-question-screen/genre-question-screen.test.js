@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import GenreQuetionScreen from "./genre-question-screen.jsx";
+import GenreQuetionScreen from "./genre-question-screen";
 
 const mock = {
   question: {

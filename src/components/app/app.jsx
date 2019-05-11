@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import PropTypes from "prop-types";
-import ArtistQuestionScreen from "../artist-question-screen/artist-question-screen.jsx";
-import QuestionGenreScreen from "../genre-question-screen/genre-question-screen.jsx";
-import WelcomeScreen from "../welcome-screen/welcome-screen.jsx";
+import ArtistQuestionScreen from "../artist-question-screen/artist-question-screen";
+import QuestionGenreScreen from "../genre-question-screen/genre-question-screen";
+import WelcomeScreen from "../welcome-screen/welcome-screen";
 
 class App extends Component {
   constructor(props) {
